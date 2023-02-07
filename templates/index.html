@@ -1,0 +1,37 @@
+{% extends 'base_product.html' %}
+{% block body %}
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <h1 class="display-4 fw-normal">python-2022</h1>
+        <p class="lead fw-normal">前修课程：网页设计制作、TCP/IP</p>
+        <p class="lead fw-normal">PYTHON期末作业</p>
+        <p class="lead fw-normal">制作人：江晓莹</p>
+        <a class="btn btn-outline-secondary" href="{{ url_for('entry_page') }}">元音查询</a>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+</div>
+
+<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+            <a href="https://gitee.com/jyzzy/python/blob/master/%E6%9C%9F%E6%9C%AB%E4%BD%9C%E4%B8%9A%E8%B4%AD%E7%89%A9%E8%BD%A6.ipynb" target="_blank">
+                <button style="width:400px;height:60px;background-color: lightgray;">python购物车</button>
+            </a>
+            <p class="lead">购买商品python学习项目</p>
+        </div>
+        <div class="bg-body shadow-sm mx-auto"
+             style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+    </div>
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <a href="https://gitee.com/jyzzy/python/blob/master/%E6%9C%9F%E6%9C%AB%EF%BC%9A%E7%8C%9C%E6%95%B0%E5%AD%97%E5%B0%8F%E6%B8%B8%E6%88%8F.ipynb" target="_blank">
+                <button style="width:400px;height:60px;background-color: lightgray;">猜数字小游戏</button>
+            </a>
+            <p class="lead">1-100猜数字小游戏</p>
+        </div>
+        <div class="bg-body shadow-sm mx-auto"
+             style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+    </div>
+</div>
+{% endblock %}

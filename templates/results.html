@@ -1,0 +1,18 @@
+{% extends 'base_product.html' %}
+{% block body %}
+    <div class="p-4 p-md-5 mb-4 rounded text-bg-dark text-center">
+        <div class="col-md-18 px40">
+            <h2 class="display-4 fw-bold">{{ the_title }}</h2>
+            <h4 class="lead my-3">You submitted the following data:</h4>
+            <p class="lead my-3">Phrase: {{ the_phrase }}
+            <p class="lead my-3">
+            <p class="lead my-3">Letters:{{ the_letters }}
+            <p class="lead my-3">
+            <h4 class="lead mb-0">When "{{ the_phrase }}" is search for
+                "{{ the_letters }}", the folowing results are returned:</h4>
+            <h3 class="display-4 fw-bold">{{ the_results }}</h3>
+        </div>
+    </div>
+
+
+{% endblock %}

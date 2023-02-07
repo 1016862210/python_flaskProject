@@ -1,0 +1,25 @@
+{% extends 'base_product.html' %}
+{% block body %}
+    <div class="px-4 pt-5 my-5 text-center border-bottom container">
+        <h2>{{ the_title }}</h2>
+
+        <form class="p-4 p-md-5 border rounded-3 bg-light" method='POST' action='/search4'>
+
+            <p>Use this form to submit a search request:</p>
+            <div class="row g-7">
+                <label class="form-label">Phrase:</label>
+                <div>
+                    <input type="text" class="form-control" name='phrase' type='TEXT' width='60'>
+                </div>
+
+                <label class="form-label">Letters:</label>
+                <div>
+                    <input type="text" class="form-control" name='letters' type='TEXT' value='aeiou'>
+                </div>
+            </div>
+            <p>When you're ready, click this button:</p>
+            <p><input value='Do it!' type='SUBMIT'></p>
+        </form>
+    </div>
+
+{% endblock %}
